@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import React , {useState} from 'react';
+import StripeCheckout from "react-stripe-checkout"
 
 function App() {
+
+  const [ product , setproduct ]=useState({
+    name: "react from fb",
+    price:10,
+    productBy: "facebook"
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h1>Hello</h1>
+    <StripeCheckout stripeKey="" token="" name="DONATE" >
+      <button className="btn-large">DONATE</button>
+    </StripeCheckout>
+    </>
   );
 }
 

@@ -1,8 +1,8 @@
-const express = require ('express')
-const cors = require ('cors')
+import express, { json } from 'express';
+import cors from 'cors';
 
-const stripe = require("stripe")("pk_test_51Io3U5SEwXz2aiklhqztYOutoVgCzVaEwTpNtWjmDlDWfxqorxS0555av2Dl4SIxt68mfBuQ3XDQ4YD2guHfLtXy00D4WJL37c")
-const uuid = require("uuid");
+const stripe = require("stripe")("sk_test_51Io3U5SEwXz2aiklNTvVQjjSIkAhTJj4tZNpQeXyKiM32FojL5cnlZ5SvGXZoT4khL9ealb4krgRHK7fONkWuFjr008lBSm6hu")
+import uuid from "uuid";
 
 
 
@@ -16,7 +16,7 @@ app.use(cors());
 
 //listen and get
 app.get("/",(req,res)=>{
-    res.send("it works at site")
+    res.send("it works at site");
 })
 
 

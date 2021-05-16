@@ -9,10 +9,61 @@
 
 .content-box h1{
   font-size: 3rem;
-  color: green;
+  color: rgb(80, 80, 235);
 }
 .content-box p{
   font-size: 1.5rem;
   font-weight: 700;
   color: rgb(28, 31, 28);
+}
+
+.donate-section{
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  border-radius: 10%;
+}
+.donate-section h2{
+  font-weight: 900;
+  color: rgb(80, 80, 235);
+}
+.donate-section p{
+  font-weight: 800;
+}
+
+.donate-section input{
+  border-radius: 4px;
+  margin: 10px;
+}
+.donate-section button{
+  border-radius: 20px;
+  background-color: rgb(162, 162, 230);
+  color: aqua;
+  transition: 0.5s ease-in;
+  font-weight: 900;
+}
+
+.donate-section button:hover{
+  background-color: aqua;
+  color: rgb(10, 10, 102);
+  font-weight: 900;
+}
+
+footer{
+  background: linear-gradient(rgb(115, 115, 158),blue);
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+footer a,footer a:hover{
+  text-decoration: none;
+  color: black;
 }

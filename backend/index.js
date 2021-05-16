@@ -44,6 +44,11 @@ app.post("/payment",(req,res)=>{
 
             }
         } , {idempotencyKey})
+    }).then(customer =>{
+        stripe.invoiceItems.create({
+            price: 'price_CBb6IXqvTLXp3f',
+            customer: customer.email,
+});
     })
     .then(result => res.status(200).json(result))
     .catch(err => console.log(err) )

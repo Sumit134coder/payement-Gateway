@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-image: url(./images/undraw_gifts_btw0.svg);
+  background-repeat: no-repeat;
 }
 
 code {
